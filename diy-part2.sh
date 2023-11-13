@@ -12,3 +12,4 @@
 
 # Modify default IP
 sed -i 's/192.168.1.1/192.168.68.167/g' package/base-files/files/bin/config_generate
+sed -i 's/$(TARGET_DIR)) install/$(TARGET_DIR)) install --force-overwrite --force-depends/' package/Makefile
