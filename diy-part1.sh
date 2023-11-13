@@ -15,5 +15,4 @@
 
 # Add a feed source
 #echo 'src-git helloworld https://github.com/fw876/helloworld' >>feeds.conf.default
-sed -i "s/192.168.1.1/192.168.68.167/" package/base-files/files/bin/config_generate
-sed -i 's/$(TARGET_DIR)) install/$(TARGET_DIR)) install --force-overwrite --force-depends/' package/Makefile
+echo 'src-git small https://github.com/kenzok8/small-package.git' >>feeds.conf.default
